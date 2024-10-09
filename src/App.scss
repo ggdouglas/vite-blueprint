@@ -13,9 +13,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em rgba(#646cff, 0.66));
 }
+
 .logo.blueprint:hover {
   filter: drop-shadow(0 0 2em rgba($blue3, 0.66));
 }

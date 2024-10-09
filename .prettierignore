@@ -1,0 +1,5 @@
+# Keep this file in sync with the prettierCheck task defined in gyerna.json
+
+pnpm-lock.yaml
+
+node_modules
