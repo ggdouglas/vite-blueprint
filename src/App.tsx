@@ -1,5 +1,11 @@
 import "./App.scss";
-import { Sandpack } from "@codesandbox/sandpack-react";
+import {
+  Sandpack,
+  SandpackCodeEditor,
+  SandpackLayout,
+  SandpackPreview,
+  SandpackProvider,
+} from "@codesandbox/sandpack-react";
 
 const app = `import { Button } from '@blueprintjs/core'
 
@@ -33,7 +39,7 @@ root.render(
 
 function App() {
   return (
-    <Sandpack
+    <SandpackProvider
       template="react-ts"
       theme="auto"
       options={{ visibleFiles: ["/App.tsx"] }}
@@ -46,7 +52,12 @@ function App() {
         "/App.tsx": app,
         "/index.tsx": index,
       }}
-    />
+    >
+      <SandpackLayout className="layout">
+        <SandpackCodeEditor className="editor" />
+        <SandpackPreview className="preview" />
+      </SandpackLayout>
+    </SandpackProvider>
   );
 }
 
