@@ -12,11 +12,11 @@ importers:
         specifier: ^5.16.4
         version: 5.16.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@blueprintjs/datetime':
-        specifier: ^5.3.21
-        version: 5.3.21(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: file:./packages/datetime/package.tgz
+        version: file:packages/datetime/package.tgz(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@blueprintjs/datetime2':
-        specifier: ^2.3.21
-        version: 2.3.21(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: file:./packages/datetime2/package.tgz
+        version: file:packages/datetime2/package.tgz(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@blueprintjs/icons':
         specifier: ^5.17.1
         version: 5.17.1(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -227,8 +227,9 @@ packages:
       '@types/react':
         optional: true
 
-  '@blueprintjs/datetime2@2.3.21':
-    resolution: {integrity: sha512-fpcvfezwfMQuQvTTkCFHG1GA88UmENSqytVwJWEx6RpnftQTJ5qRb/xgutJQlZH/6Oi/mxb6j86X8ylv5nuVWA==}
+  '@blueprintjs/datetime2@file:packages/datetime2/package.tgz':
+    resolution: {integrity: sha512-nL7jYXY83xeAbn2rQXK36/kH/e8OsK7YjGBh4O33xGYX5GTqjyOmXwoPZWJ8I3HGBC5UAAp1PdwqLU6A9qSbjQ==, tarball: file:packages/datetime2/package.tgz}
+    version: 2.3.21
     peerDependencies:
       '@types/react': ^16.14.41 || 17 || 18
       react: ^16.8 || 17 || 18
@@ -239,6 +240,17 @@ packages:
 
   '@blueprintjs/datetime@5.3.21':
     resolution: {integrity: sha512-OtSiENAcvIjCaT9oeBpT5hLSseVayb2yJFhyYrqh6G4/rNVE6lz5XacDhKTwC6BC+tS9DcWP0wsQK82YugtGHw==}
+    peerDependencies:
+      '@types/react': ^16.14.41 || 17
+      react: ^16.8 || 17
+      react-dom: ^16.8 || 17
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@blueprintjs/datetime@file:packages/datetime/package.tgz':
+    resolution: {integrity: sha512-4QqzEhP86HP6K08JBZEoDNyNxu9TXitcuVf0Sz+chqUagIfgSy1fe9Il99ufQC9sYyvwftuConyFZqUUWG73bw==, tarball: file:packages/datetime/package.tgz}
+    version: 5.3.21
     peerDependencies:
       '@types/react': ^16.14.41 || 17
       react: ^16.8 || 17
@@ -2276,7 +2288,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.18
 
-  '@blueprintjs/datetime2@2.3.21(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@blueprintjs/datetime2@file:packages/datetime2/package.tgz(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@blueprintjs/core': 5.16.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@blueprintjs/datetime': 5.3.21(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2292,6 +2304,21 @@ snapshots:
       '@types/react': 18.3.18
 
   '@blueprintjs/datetime@5.3.21(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@blueprintjs/core': 5.16.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@blueprintjs/icons': 5.17.1(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@blueprintjs/select': 5.3.9(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      classnames: 2.5.1
+      date-fns: 2.30.0
+      date-fns-tz: 2.0.1(date-fns@2.30.0)
+      react: 18.3.1
+      react-day-picker: 7.4.9(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
+      tslib: 2.6.3
+    optionalDependencies:
+      '@types/react': 18.3.18
+
+  '@blueprintjs/datetime@file:packages/datetime/package.tgz(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@blueprintjs/core': 5.16.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@blueprintjs/icons': 5.17.1(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
