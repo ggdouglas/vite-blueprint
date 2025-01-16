@@ -13,8 +13,8 @@
     },
     "dependencies": {
         "@blueprintjs/core": "^5.16.4",
-        "@blueprintjs/datetime": "^5.3.21",
-        "@blueprintjs/datetime2": "^2.3.21",
+        "@blueprintjs/datetime": "file:./packages/datetime/package.tgz",
+        "@blueprintjs/datetime2": "file:./packages/datetime2/package.tgz",
         "@blueprintjs/icons": "^5.17.1",
         "@blueprintjs/select": "^5.3.9",
         "@blueprintjs/table": "^5.3.3",
